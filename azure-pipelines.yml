@@ -20,14 +20,14 @@ steps:
     projects: 'congress/congress.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
 
-#- task: PublishBuildArtifacts@1
+#- task: DotNetCoreCLI@2
 #  inputs:
-#    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-#    artifactName: 'drop'
+#    command: publish
+#    arguments: '--configuration $(BuildConfiguration)'
+#    zipAfterPublish: True
+#    workingDirectory: congress
 
-- task: DotNetCoreCLI@2
+- task: PublishBuildArtifacts@1
   inputs:
-    command: publish
-    arguments: '--configuration $(BuildConfiguration)'
-    zipAfterPublish: True
-    workingDirectory: congress
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: 'congress_drop'
