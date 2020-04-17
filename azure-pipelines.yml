@@ -31,3 +31,4 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
     workingDirectory: congress
+    modifyOutputPath: true
