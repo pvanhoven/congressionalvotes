@@ -31,4 +31,3 @@ steps:
     arguments: '--configuration $(BuildConfiguration)'
     zipAfterPublish: True
     workingDirectory: congress
-    modifyOutputPath: true
