@@ -30,3 +30,4 @@ steps:
     command: publish
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
+    workingDirectory: congress
