@@ -8,5 +8,14 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <CongressionalRecordsXml Include="./../congress_downloader/data/**/*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </CongressionalRecordsXml>
+  </ItemGroup>
+
+  <Target Name="CopyData" AfterTargets="AfterBuild">
+    <Copy SourceFiles="@(CongressionalRecordsXml)" DestinationFolder="$(OutDir)/data" SkipUnchangedFiles="true" />
+  </Target>
 
 </Project>

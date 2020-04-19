@@ -9,7 +9,7 @@ public class SenateXmlLoader
     public IEnumerable<SenateSession> LoadSessions()
     {
         List<SenateSession> sessions = new List<SenateSession>();
-        var files = Directory.EnumerateFiles("/home/phillip/dev/CongressionalVotes/congress_downloader/data");
+        var files = Directory.EnumerateFiles("./data");
         foreach (string file in files)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(SenateSession));
