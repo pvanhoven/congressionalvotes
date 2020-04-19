@@ -24,3 +24,21 @@ steps:
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'congress_drop'
+
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    command: 'install'
+    workingDir: 'congressional-votes'
+
+- task: Npm@1
+  displayName: 'Build Angular'
+  inputs:
+    command: 'custom'
+    customCommand: 'run build -- --prod'
+    workingDir: 'congressional-votes'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    artifactName: 'angular'
+    targetPath: 'congressional-votes/dist'
