@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <Target Name="CopyData" AfterTargets="AfterBuild">
-    <Copy SourceFiles="@(CongressionalRecordsXml)" DestinationFolder="$(OutDir)/data" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(CongressionalRecordsXml)" DestinationFolder="$(OutDir)/data/**/*.*" SkipUnchangedFiles="true" />
   </Target>
 
 </Project>
