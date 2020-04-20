@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -11,7 +9,6 @@ namespace congress.Controllers
     [Route("senate")]
     public class SenateController : ControllerBase
     {
-
         public static IEnumerable<SenateSession> Sessions { get; set; }
 
         static SenateController()
@@ -32,6 +29,15 @@ namespace congress.Controllers
         public IEnumerable<object> Get()
         {
             return Sessions.Select(s => new { s.Congress, s.Session, s.Year });
+        }
+
+        [HttpGet("members")]
+        public object GetSenators()
+        {
+            return Sessions
+                .OrderBy(s => s.Year)
+                .ThenBy(s => s.Session)
+                .Last();
         }
 
         [HttpGet("votes")]

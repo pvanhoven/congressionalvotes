@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?><vote_summary>
+  <congress>116</congress>
+  <session>2</session>
+  <congress_year>2020</congress_year>
+  <votes>
+    <vote>
+      <vote_number>00080</vote_number>
+      <vote_date>25-Mar</vote_date>
+      <issue>H.R. 748</issue>
+      <question>On Passage of the Bill
+         </question>
+      <result>Passed</result>
+      <vote_tally>
+        <yeas>96</yeas>
+        <nays>0</nays>
+      </vote_tally>
+      <title>H.R. 748 As Amended; A bill to amend the Internal Revenue Code of 1986 to repeal the excise tax on high cost employer-sponsored health coverage.</title>
+    </vote>
+    <vote>
+      <vote_number>00079</vote_number>
+      <vote_date>25-Mar</vote_date>
+      <issue>H.R. 748</issue>
+      <question>On the Amendment
+        <measure>S.Amdt. 1577</measure></question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>48</yeas>
+        <nays>48</nays>
+      </vote_tally>
+      <title>Sasse Amdt No.1577; To ensure that additional unemployment benefits do not result in an individual receiving unemployment compensation that is more than the amount of wages the individual was earning prior to becoming unemployed.</title>
+    </vote>
+    <vote>
+      <vote_number>00078</vote_number>
+      <vote_date>23-Mar</vote_date>
+      <issue>H.R. 748</issue>
+      <question>On Cloture on the Motion to Proceed
+         </question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>49</yeas>
+        <nays>46</nays>
+      </vote_tally>
+      <title>Upon Reconsideration, Motion to Invoke Cloture on the Motion to Proceed to H.R. 748; A bill to amend the Internal Revenue Code of 1986 to repeal the excise tax on high cost employer-sponsored health coverage.</title>
+    </vote>
+    <vote>
+      <vote_number>00077</vote_number>
+      <vote_date>22-Mar</vote_date>
+      <issue>H.R. 748</issue>
+      <question>On Cloture on the Motion to Proceed
+         </question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>47</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Re: Motion to Proceed to H.R. 748; A bill to amend the Internal Revenue Code of 1986 to repeal the excise tax on high cost employer-sponsored health coverage.</title>
+    </vote>
+    <vote>
+      <vote_number>00076</vote_number>
+      <vote_date>18-Mar</vote_date>
+      <issue>H.R. 6201</issue>
+      <question>On Passage of the Bill
+         </question>
+      <result>Passed</result>
+      <vote_tally>
+        <yeas>90</yeas>
+        <nays>8</nays>
+      </vote_tally>
+      <title>H.R. 6201; A bill making emergency supplemental appropriations for the fiscal year ending September 30, 2020, and for other purposes.</title>
+    </vote>
+    <vote>
+      <vote_number>00075</vote_number>
+      <vote_date>18-Mar</vote_date>
+      <issue>H.R. 6201</issue>
+      <question>On the Amendment
+        <measure>S.Amdt. 1558</measure></question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>50</yeas>
+        <nays>48</nays>
+      </vote_tally>
+      <title>Johnson Amdt. No.1558; To strike Federally mandated sick pay and paid family leave and replace it with financial support provided through State administered unemployment insurance systems and funds.</title>
+    </vote>
+    <vote>
+      <vote_number>00074</vote_number>
+      <vote_date>18-Mar</vote_date>
+      <issue>H.R. 6201</issue>
+      <question>On the Amendment
+        <measure>S.Amdt. 1559</measure></question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>47</yeas>
+        <nays>51</nays>
+      </vote_tally>
+      <title>Murray Amdt. No.1559; To provide Americans with paid sick time and paid leave so that they can address their own health needs and the health needs of their families.</title>
+    </vote>
+    <vote>
+      <vote_number>00073</vote_number>
+      <vote_date>18-Mar</vote_date>
+      <issue>H.R. 6201</issue>
+      <question>On the Amendment
+        <measure>S.Amdt. 1556</measure></question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>3</yeas>
+        <nays>95</nays>
+      </vote_tally>
+      <title>Paul Amdt. No. 1556; To amend the Internal Revenue Code of 1986 to require a social security number for purposes of the child tax credit, to provide the President the authority to transfer funds as necessary, and to terminate United States military operations and reconstruction activities in Afghanistan.</title>
+    </vote>
+    <vote>
+      <vote_number>00072</vote_number>
+      <vote_date>12-Mar</vote_date>
+      <issue>PN1498</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>52</yeas>
+        <nays>40</nays>
+      </vote_tally>
+      <title>Confirmation: James P. Danly, of Tennessee, to be a Member of the Federal Energy Regulatory Commission</title>
+    </vote>
+    <vote>
+      <vote_number>00071</vote_number>
+      <vote_date>12-Mar</vote_date>
+      <issue>PN1498</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>54</yeas>
+        <nays>40</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: James P. Danly to be a Member of the Federal Energy Regulatory Commission</title>
+    </vote>
+    <vote>
+      <vote_number>00070</vote_number>
+      <vote_date>11-Mar</vote_date>
+      <issue>H.J.Res. 76</issue>
+      <question>On the Joint Resolution
+         </question>
+      <result>Passed</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>42</nays>
+      </vote_tally>
+      <title>H.J. Res. 76; A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to "Borrower Defense Institutional Accountability".</title>
+    </vote>
+    <vote>
+      <vote_number>00069</vote_number>
+      <vote_date>10-Mar</vote_date>
+      <issue>S.J.Res. 56</issue>
+      <question>On the Motion to Proceed
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>55</yeas>
+        <nays>41</nays>
+      </vote_tally>
+      <title>Motion To Proceed To: S.J. Res. 56; A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to "Borrower Defense Institutional Accountability".</title>
+    </vote>
+    <vote>
+      <vote_number>00068</vote_number>
+      <vote_date>09-Mar</vote_date>
+      <issue>S. 2657</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>15</yeas>
+        <nays>73</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture on S. 2657; A bill to support innovation in advanced geothermal research and development, and for other purposes.</title>
+    </vote>
+    <vote>
+      <vote_number>00067</vote_number>
+      <vote_date>09-Mar</vote_date>
+      <issue>S. 2657</issue>
+      <question>On the Cloture Motion
+        <measure>S.Amdt. 1407</measure></question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>47</yeas>
+        <nays>44</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture on  Amdt. No. 1407, As Modified, to S.2657; In the nature of a substitute.</title>
+    </vote>
+    <vote>
+      <vote_number>00066</vote_number>
+      <vote_date>05-Mar</vote_date>
+      <issue>H.R. 6074</issue>
+      <question>On Passage of the Bill
+         </question>
+      <result>Passed</result>
+      <vote_tally>
+        <yeas>96</yeas>
+        <nays>1</nays>
+      </vote_tally>
+      <title>H.R. 6074; A bill making emergency supplemental appropriations for the fiscal year ending September 30, 2020, and for other purposes.</title>
+    </vote>
+    <vote>
+      <vote_number>00065</vote_number>
+      <vote_date>05-Mar</vote_date>
+      <issue>H.R. 6074</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1506</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>81</yeas>
+        <nays>15</nays>
+      </vote_tally>
+      <title>Motion to Table Paul Amdt. No. 1506; To rescind unobligated balances for certain international programs to offset the amounts appropriated in this bill to respond to the coronavirus outbreak.</title>
+    </vote>
+    <vote>
+      <vote_number>00064</vote_number>
+      <vote_date>04-Mar</vote_date>
+      <issue>S. 2657</issue>
+      <question>On the Motion to Proceed
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>90</yeas>
+        <nays>4</nays>
+      </vote_tally>
+      <title>Motion to Proceed to S. 2657; A bill to support innovation in advanced geothermal research and development, and for other purposes.</title>
+    </vote>
+    <vote>
+      <vote_number>00063</vote_number>
+      <vote_date>02-Mar</vote_date>
+      <issue>S. 2657</issue>
+      <question>On Cloture on the Motion to Proceed
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>84</yeas>
+        <nays>3</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Motion to Proceed to S. 2657; A bill to support innovation in advanced geothermal research and development, and for other purposes.</title>
+    </vote>
+    <vote>
+      <vote_number>00062</vote_number>
+      <vote_date>27-Feb</vote_date>
+      <issue>PN365</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>85</yeas>
+        <nays>3</nays>
+      </vote_tally>
+      <title>Confirmation: Travis Greaves, of the District of Columbia, to be a Judge for the U.S. Tax Court</title>
+    </vote>
+    <vote>
+      <vote_number>00061</vote_number>
+      <vote_date>25-Feb</vote_date>
+      <issue>PN365</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>91</yeas>
+        <nays>5</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Travis Greaves to be a Judge of the United States Tax Court</title>
+    </vote>
+    <vote>
+      <vote_number>00060</vote_number>
+      <vote_date>25-Feb</vote_date>
+      <issue>PN1332</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>58</yeas>
+        <nays>38</nays>
+      </vote_tally>
+      <title>Confirmation: Katharine MacGregor, of Pennsylvania, to be Deputy Secretary of the Interior</title>
+    </vote>
+    <vote>
+      <vote_number>00059</vote_number>
+      <vote_date>25-Feb</vote_date>
+      <issue>PN1168</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>96</yeas>
+        <nays>0</nays>
+      </vote_tally>
+      <title>Confirmation: Silvia Carreno-Coll, of Puerto Rico, to be U.S. District Judge for the District of Puerto Rico</title>
+    </vote>
+    <vote>
+      <vote_number>00058</vote_number>
+      <vote_date>25-Feb</vote_date>
+      <issue>S. 311</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>56</yeas>
+        <nays>41</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Motion to Proceed to S. 311; A bill to amend title 18, United States Code, to prohibit a health care practitioner from failing to exercise the proper degree of care in the case of a child who survives an abortion or attempted abortion.</title>
+    </vote>
+    <vote>
+      <vote_number>00057</vote_number>
+      <vote_date>25-Feb</vote_date>
+      <issue>S. 3275</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>44</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Motion to Proceed to S. 3275; A bill to amend title 18, United States Code, to protect pain-capable unborn children, and for other purposes.</title>
+    </vote>
+    <vote>
+      <vote_number>00056</vote_number>
+      <vote_date>25-Feb</vote_date>
+      <issue>PN1332</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>59</yeas>
+        <nays>38</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Katharine MacGregor to be Deputy Secretary of the Interior</title>
+    </vote>
+    <vote>
+      <vote_number>00055</vote_number>
+      <vote_date>25-Feb</vote_date>
+      <issue>PN1168</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>96</yeas>
+        <nays>1</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Silvia Carreno-Coll to be U.S. District Judge for the District of Puerto Rico</title>
+    </vote>
+    <vote>
+      <vote_number>00054</vote_number>
+      <vote_date>25-Feb</vote_date>
+      <issue>PN854</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>97</yeas>
+        <nays>0</nays>
+      </vote_tally>
+      <title>Confirmation: Robert Anthony Molloy, of the Virgin Islands, to be Judge for the District Court of the Virgin Islands</title>
+    </vote>
+    <vote>
+      <vote_number>00053</vote_number>
+      <vote_date>24-Feb</vote_date>
+      <issue>PN854</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>88</yeas>
+        <nays>1</nays>
+      </vote_tally>
+      <title> Motion to Invoke Cloture: Robert Anthony Molloy to be Judge for the District Court of the Virgin Islands</title>
+    </vote>
+    <vote>
+      <vote_number>00052</vote_number>
+      <vote_date>13-Feb</vote_date>
+      <issue>S.J.Res. 68</issue>
+      <question>On the Joint Resolution
+         </question>
+      <result>Passed</result>
+      <vote_tally>
+        <yeas>55</yeas>
+        <nays>45</nays>
+      </vote_tally>
+      <title>S.J. Res. 68 As Amended; A joint resolution to direct the removal of United States Armed Forces from hostilities against the Islamic Republic of Iran that have not been authorized by Congress.</title>
+    </vote>
+    <vote>
+      <vote_number>00051</vote_number>
+      <vote_date>13-Feb</vote_date>
+      <issue>S.J.Res. 68</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1319</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>51</yeas>
+        <nays>49</nays>
+      </vote_tally>
+      <title>Motion to Table Sullivan Amdt. No. 1319; To amend the rule of construction.</title>
+    </vote>
+    <vote>
+      <vote_number>00050</vote_number>
+      <vote_date>13-Feb</vote_date>
+      <issue>S.J.Res. 68</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1320</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>54</yeas>
+        <nays>46</nays>
+      </vote_tally>
+      <title>Motion to Table Rubio Amdt. No. 1320; To amend the findings.</title>
+    </vote>
+    <vote>
+      <vote_number>00049</vote_number>
+      <vote_date>13-Feb</vote_date>
+      <issue>S.J.Res. 68</issue>
+      <question>On the Amendment
+        <measure>S.Amdt. 1314</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>93</yeas>
+        <nays>7</nays>
+      </vote_tally>
+      <title>Risch Amdt. No. 1314; To amend the findings.</title>
+    </vote>
+    <vote>
+      <vote_number>00048</vote_number>
+      <vote_date>13-Feb</vote_date>
+      <issue>S.J.Res. 68</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1305</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>54</yeas>
+        <nays>46</nays>
+      </vote_tally>
+      <title>Motion to Table Cotton Amdt. No. 1305; To exempt from the termination requirement United States Armed Forces engaged in operations directed at designated terrorist organizations.</title>
+    </vote>
+    <vote>
+      <vote_number>00047</vote_number>
+      <vote_date>13-Feb</vote_date>
+      <issue>S.J.Res. 68</issue>
+      <question>On the Amendment
+        <measure>S.Amdt. 1322</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>99</yeas>
+        <nays>0</nays>
+      </vote_tally>
+      <title>Reed Amdt. No. 1322; To amend the findings.</title>
+    </vote>
+    <vote>
+      <vote_number>00046</vote_number>
+      <vote_date>13-Feb</vote_date>
+      <issue>S.J.Res. 68</issue>
+      <question>On the Amendment
+        <measure>S.Amdt. 1301</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>64</yeas>
+        <nays>34</nays>
+      </vote_tally>
+      <title>Cruz Amdt. No. 1301; To amend the findings.</title>
+    </vote>
+    <vote>
+      <vote_number>00045</vote_number>
+      <vote_date>12-Feb</vote_date>
+      <issue>S.J.Res. 68</issue>
+      <question>On the Motion to Proceed
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>51</yeas>
+        <nays>45</nays>
+      </vote_tally>
+      <title>Motion to Proceed to S.J. Res. 68; A joint resolution to direct the removal of United States Armed Forces from hostilities against the Islamic Republic of Iran that have not been authorized by Congress.</title>
+    </vote>
+    <vote>
+      <vote_number>00044</vote_number>
+      <vote_date>12-Feb</vote_date>
+      <issue>PN229</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>77</yeas>
+        <nays>19</nays>
+      </vote_tally>
+      <title>Confirmation: Philip M. Halpern, of New York, to be U.S. District Judge for the Southern District of New York</title>
+    </vote>
+    <vote>
+      <vote_number>00043</vote_number>
+      <vote_date>12-Feb</vote_date>
+      <issue>PN894</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>81</yeas>
+        <nays>12</nays>
+      </vote_tally>
+      <title>Confirmation: John Fitzgerald Kness, of Illinois, to be U.S. District Judge for the Northern District of Illinois</title>
+    </vote>
+    <vote>
+      <vote_number>00042</vote_number>
+      <vote_date>12-Feb</vote_date>
+      <issue>PN1327</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>72</yeas>
+        <nays>23</nays>
+      </vote_tally>
+      <title>Confirmation: Matthew Thomas Schelp, of Missouri, to be U.S. District Judge for the Eastern District of Missouri</title>
+    </vote>
+    <vote>
+      <vote_number>00041</vote_number>
+      <vote_date>12-Feb</vote_date>
+      <issue>PN1326</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>54</yeas>
+        <nays>41</nays>
+      </vote_tally>
+      <title>Confirmation: Joshua M. Kindred, of Alaska, to be U.S. District Judge for the District of Alaska</title>
+    </vote>
+    <vote>
+      <vote_number>00040</vote_number>
+      <vote_date>11-Feb</vote_date>
+      <issue>PN229</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>75</yeas>
+        <nays>18</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Philip M. Halpern to be U.S. District Judge for the Southern District of New York</title>
+    </vote>
+    <vote>
+      <vote_number>00039</vote_number>
+      <vote_date>11-Feb</vote_date>
+      <issue>PN894</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>82</yeas>
+        <nays>12</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: John Fitzgerald Kness to be U.S. District Judge for the Northern District of Illinois</title>
+    </vote>
+    <vote>
+      <vote_number>00038</vote_number>
+      <vote_date>11-Feb</vote_date>
+      <issue>PN1327</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>72</yeas>
+        <nays>22</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Matthew Thomas Schelp to be U.S. District Judge for the Eastern District of Missouri</title>
+    </vote>
+    <vote>
+      <vote_number>00037</vote_number>
+      <vote_date>11-Feb</vote_date>
+      <issue>PN1326</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>52</yeas>
+        <nays>41</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Joshua M. Kindred to be U.S. District Judge for the District of Alaska</title>
+    </vote>
+    <vote>
+      <vote_number>00036</vote_number>
+      <vote_date>11-Feb</vote_date>
+      <issue>PN1325</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>52</yeas>
+        <nays>43</nays>
+      </vote_tally>
+      <title>Confirmation: Andrew Lynn Brasher, of Alabama, to be U.S. Circuit Judge for the Eleventh Circuit</title>
+    </vote>
+    <vote>
+      <vote_number>00035</vote_number>
+      <vote_date>10-Feb</vote_date>
+      <issue>PN1325</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>46</yeas>
+        <nays>41</nays>
+      </vote_tally>
+      <title> Motion to Invoke Cloture: Andrew Lynn Brasher to be United States Circuit Judge for the Eleventh Circuit</title>
+    </vote>
+    <vote>
+      <vote_number>00034</vote_number>
+      <vote_date>05-Feb</vote_date>
+      <issue>H.Res. 755</issue>
+      <question>Guilty or Not Guilty
+         </question>
+      <result>Not Guilty</result>
+      <vote_tally>
+        <yeas>47</yeas>
+        <nays>53</nays>
+      </vote_tally>
+      <title>Article II, Articles of Impeachment Against President Donald John Trump; A resolution impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors.</title>
+    </vote>
+    <vote>
+      <vote_number>00033</vote_number>
+      <vote_date>05-Feb</vote_date>
+      <issue>H.Res. 755</issue>
+      <question>Guilty or Not Guilty
+         </question>
+      <result>Not Guilty</result>
+      <vote_tally>
+        <yeas>48</yeas>
+        <nays>52</nays>
+      </vote_tally>
+      <title>Article I, Articles of Impeachment Against President Donald John Trump; A resolution impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors.</title>
+    </vote>
+    <vote>
+      <vote_number>00032</vote_number>
+      <vote_date>31-Jan</vote_date>
+      <issue>S.Res. 488</issue>
+      <question>On the Resolution
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>S. Res. 488; A resolution to provide for related procedures concerning the articles of impeachment against Donald John Trump, President of the United States.</title>
+    </vote>
+    <vote>
+      <vote_number>00031</vote_number>
+      <vote_date>31-Jan</vote_date>
+      <issue>S.Res. 488</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1298</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Van Hollen Amdt. No. 1298; To help ensure impartial justice by requiring the Chief Justice of the United States to rule on motions to subpoena witnesses and documents and issues of privilege.</title>
+    </vote>
+    <vote>
+      <vote_number>00030</vote_number>
+      <vote_date>31-Jan</vote_date>
+      <issue>S.Res. 488</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1297</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>51</yeas>
+        <nays>49</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1297; To subpoena John Robert Bolton.</title>
+    </vote>
+    <vote>
+      <vote_number>00029</vote_number>
+      <vote_date>31-Jan</vote_date>
+      <issue>S.Res. 488</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1296</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>51</yeas>
+        <nays>49</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1296; To subpoena John Robert Bolton.</title>
+    </vote>
+    <vote>
+      <vote_number>00028</vote_number>
+      <vote_date>31-Jan</vote_date>
+      <issue>S.Res. 488</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1295</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1295; To subpoena certain relevant witnesses and documents.</title>
+    </vote>
+    <vote>
+      <vote_number>00027</vote_number>
+      <vote_date>31-Jan</vote_date>
+      <issue>n/a</issue>
+      <question>On the Motion (Shall It Be In Order To Consider And Debate Any Motion To Subpoena Witnesses Or Documents)
+         </question>
+      <result>Rejected</result>
+      <vote_tally>
+        <yeas>49</yeas>
+        <nays>51</nays>
+      </vote_tally>
+      <title>Shall It Be In Order To Consider And Debate Any Motion To Subpoena Witnesses Or Documents</title>
+    </vote>
+    <vote>
+      <vote_number>00026</vote_number>
+      <vote_date>22-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Resolution
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>S. Res. 483; A resolution to provide for related procedures concerning the articles of impeachment against Donald John Trump, President of the United States.</title>
+    </vote>
+    <vote>
+      <vote_number>00025</vote_number>
+      <vote_date>22-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1294</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer for Van Hollen Amdt. No. 1294; To help ensure impartial justice by requiring the Chief Justice of the United States to rule on motions to subpoena witnesses and documents.</title>
+    </vote>
+    <vote>
+      <vote_number>00024</vote_number>
+      <vote_date>22-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1293</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>52</yeas>
+        <nays>48</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1293; To allow additional time to file responses to motions.</title>
+    </vote>
+    <vote>
+      <vote_number>00023</vote_number>
+      <vote_date>22-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1292</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1292; To provide that motions to subpoena witnesses or documents shall be in order after the question period.</title>
+    </vote>
+    <vote>
+      <vote_number>00022</vote_number>
+      <vote_date>22-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1291</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1291; To subpoena John Robert Bolton.</title>
+    </vote>
+    <vote>
+      <vote_number>00021</vote_number>
+      <vote_date>21-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1290</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1290; To prevent the selective admission of evidence and to provide for appropriate handling of classified and confidential materials.</title>
+    </vote>
+    <vote>
+      <vote_number>00020</vote_number>
+      <vote_date>21-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1289</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1289; To subpoena Robert B. Blair and Michael P. Duffey.</title>
+    </vote>
+    <vote>
+      <vote_number>00019</vote_number>
+      <vote_date>21-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1288</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1288; To subpoena certain Department of Defense documents and records.</title>
+    </vote>
+    <vote>
+      <vote_number>00018</vote_number>
+      <vote_date>21-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1287</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No.1287; To subpoena John Michael "Mick" Mulvaney.</title>
+    </vote>
+    <vote>
+      <vote_number>00017</vote_number>
+      <vote_date>21-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1286</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1286; To subpoena certain Office of Management and Budget documents and records.</title>
+    </vote>
+    <vote>
+      <vote_number>00016</vote_number>
+      <vote_date>21-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1285</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1285; To subpoena certain Department of State documents and records.</title>
+    </vote>
+    <vote>
+      <vote_number>00015</vote_number>
+      <vote_date>21-Jan</vote_date>
+      <issue>S.Res. 483</issue>
+      <question>On the Motion to Table
+        <measure>S.Amdt. 1284</measure></question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>53</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Motion to Table Schumer Amdt. No. 1284; To subpoena certain White House documents and records.</title>
+    </vote>
+    <vote>
+      <vote_number>00014</vote_number>
+      <vote_date>16-Jan</vote_date>
+      <issue>H.R. 5430</issue>
+      <question>On Passage of the Bill
+         </question>
+      <result>Passed</result>
+      <vote_tally>
+        <yeas>89</yeas>
+        <nays>10</nays>
+      </vote_tally>
+      <title>H.R. 5430; A bill to implement the Agreement between the United States of America, the United Mexican States, and Canada attached as an Annex to the Protocol Replacing the North American Free Trade Agreement.</title>
+    </vote>
+    <vote>
+      <vote_number>00013</vote_number>
+      <vote_date>16-Jan</vote_date>
+      <issue>H.R. 5430</issue>
+      <question>On the Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>78</yeas>
+        <nays>21</nays>
+      </vote_tally>
+      <title>Motion to Waive All Applicable Budgetary Discipline Re: H.R. 5430; A bill to implement the Agreement between the United States of America, the United Mexican States, and Canada attached as an Annex to the Protocol Replacing the North American Free Trade Agreement.</title>
+    </vote>
+    <vote>
+      <vote_number>00012</vote_number>
+      <vote_date>14-Jan</vote_date>
+      <issue>PN1165</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>81</yeas>
+        <nays>8</nays>
+      </vote_tally>
+      <title>Confirmation: Peter Gaynor, of Rhode Island, to be Administrator of the Federal Emergency Management Agency, Department of Homeland Security</title>
+    </vote>
+    <vote>
+      <vote_number>00011</vote_number>
+      <vote_date>13-Jan</vote_date>
+      <issue>PN1165</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>76</yeas>
+        <nays>8</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Peter Gaynor to be Administrator of the Federal Emergency Management Agency, Department of Homeland Security</title>
+    </vote>
+    <vote>
+      <vote_number>00010</vote_number>
+      <vote_date>09-Jan</vote_date>
+      <issue>PN1166</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>50</yeas>
+        <nays>44</nays>
+      </vote_tally>
+      <title>Confirmation: Paul J. Ray, of Tennessee, to be Administrator of the Office of Information and Regulatory Affairs, Office of Management and Budget</title>
+    </vote>
+    <vote>
+      <vote_number>00009</vote_number>
+      <vote_date>09-Jan</vote_date>
+      <issue>PN1166</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>50</yeas>
+        <nays>45</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Paul J. Ray to be Administrator of the Office of Information and Regulatory Affairs, Office of Management and Budget</title>
+    </vote>
+    <vote>
+      <vote_number>00008</vote_number>
+      <vote_date>08-Jan</vote_date>
+      <issue>PN966</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>91</yeas>
+        <nays>7</nays>
+      </vote_tally>
+      <title>Confirmation: Michael George DeSombre, of Illinois, to be Ambassador of the United States of America to the Kingdom of Thailand</title>
+    </vote>
+    <vote>
+      <vote_number>00007</vote_number>
+      <vote_date>08-Jan</vote_date>
+      <issue>PN897</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>51</yeas>
+        <nays>47</nays>
+      </vote_tally>
+      <title>Confirmation: Eleni Maria Roumel, of Maryland, to be a Judge for the U.S. Court of Federal Claims</title>
+    </vote>
+    <vote>
+      <vote_number>00006</vote_number>
+      <vote_date>08-Jan</vote_date>
+      <issue>PN455</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>89</yeas>
+        <nays>8</nays>
+      </vote_tally>
+      <title>Confirmation: Matthew H. Solomson, of Maryland, to be a Judge of the U.S. Court of Federal Claims</title>
+    </vote>
+    <vote>
+      <vote_number>00005</vote_number>
+      <vote_date>08-Jan</vote_date>
+      <issue>PN966</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>64</yeas>
+        <nays>31</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Michael George DeSombre to be Ambassador of the United States to the Kingdom of Thailand</title>
+    </vote>
+    <vote>
+      <vote_number>00004</vote_number>
+      <vote_date>08-Jan</vote_date>
+      <issue>PN897</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>51</yeas>
+        <nays>44</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Eleni Maria Roumel to be a Judge of the U.S. Court of Federal Claims</title>
+    </vote>
+    <vote>
+      <vote_number>00003</vote_number>
+      <vote_date>08-Jan</vote_date>
+      <issue>PN455</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>88</yeas>
+        <nays>7</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture: Matthew H. Solomsom to be a Judge for the U.S. Court of Federal Claims</title>
+    </vote>
+    <vote>
+      <vote_number>00002</vote_number>
+      <vote_date>07-Jan</vote_date>
+      <issue>PN1039</issue>
+      <question>On the Nomination
+         </question>
+      <result>Confirmed</result>
+      <vote_tally>
+        <yeas>88</yeas>
+        <nays>5</nays>
+      </vote_tally>
+      <title>Confirmation: Jovita Carranza, of Illinois, to be Administrator of the Small Business Administration</title>
+    </vote>
+    <vote>
+      <vote_number>00001</vote_number>
+      <vote_date>06-Jan</vote_date>
+      <issue>PN1039</issue>
+      <question>On the Cloture Motion
+         </question>
+      <result>Agreed to</result>
+      <vote_tally>
+        <yeas>86</yeas>
+        <nays>5</nays>
+      </vote_tally>
+      <title>Motion to Invoke Cloture on Jovita Carranza, of Illinois, to be Administrator of the Small Business Administration</title>
+    </vote>
+  </votes>
+</vote_summary>
