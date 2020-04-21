@@ -10,12 +10,24 @@ namespace congress.Controllers
     public class SenateController : ControllerBase
     {
         public static IEnumerable<SenateSession> Sessions { get; set; }
+        public static IEnumerable<RollCallVote> RollCallVotes { get; set; }
+        public static Dictionary<string, object> Members { get; set; }
 
         static SenateController()
         {
             SenateXmlLoader loader = new SenateXmlLoader();
             var sessions = loader.LoadSessions();
             Sessions = sessions;
+            RollCallVotes = loader.GetRollCallVotes("116", "2");
+
+            Members = new Dictionary<string, object>();
+            foreach (var vote in RollCallVotes)
+            {
+                foreach (var member in vote.Members.MemberElements)
+                {
+                    Members[member.LisMemberId] = new { member.FullName, member.LastName, member.FirstName, member.Party, member.State, member.LisMemberId };
+                }
+            }
         }
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -32,12 +44,9 @@ namespace congress.Controllers
         }
 
         [HttpGet("members")]
-        public object GetSenators()
+        public IEnumerable<object> GetSenators()
         {
-            return Sessions
-                .OrderBy(s => s.Year)
-                .ThenBy(s => s.Session)
-                .Last();
+            return Members.Values;
         }
 
         [HttpGet("votes")]

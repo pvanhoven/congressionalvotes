@@ -15,5 +15,15 @@ namespace congress.tests
             Assert.NotNull(result);
             Assert.True(result.Any());
         }
+
+        [Fact]
+        public void LoadSomeOtherXml()
+        {
+            SenateXmlLoader loader = new SenateXmlLoader();
+            var result = loader.GetRollCallVotes("116", "2");
+
+            Assert.NotNull(result);
+            Assert.True(result.Any());
+        }
     }
 }
