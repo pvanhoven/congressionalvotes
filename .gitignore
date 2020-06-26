@@ -36,3 +36,9 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 
+# look for these for db passwords and such
+.env
+
+# ignore raw xml data files
+congress_downloader/data
+
