@@ -22,7 +22,7 @@ namespace congress
         {
             services.AddDbContext<CongressDataContext>(options =>
             {
-                string connectionString = Configuration.GetValue<string>("CongressionalVotesDbConnectionString");
+                string connectionString = Configuration.GetValue<string>("CongressionalVotesDbConnectionString".ToUpper());
                 options.UseSqlServer(connectionString);
             });
 
