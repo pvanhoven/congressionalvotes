@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +25,14 @@ namespace congress
         {
             services.AddDbContext<CongressDataContext>(options =>
             {
+                foreach (DictionaryEntry e in System.Environment.GetEnvironmentVariables())
+                {
+                    Console.WriteLine(e.Key + ":" + e.Value);
+                    Debug.WriteLine(e.Key + ":" + e.Value);
+                    Trace.TraceError(e.Key + ":" + e.Value);
+                }
+
+                // need to print environment variables, figure out if this is a casing issue or doesn't exist
                 string connectionString = Configuration.GetValue<string>("CongressionalVotesDbConnectionString".ToUpper());
                 options.UseSqlServer(connectionString);
             });
