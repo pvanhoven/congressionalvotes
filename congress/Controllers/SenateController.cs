@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using congress.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace congress.Controllers
@@ -27,7 +29,7 @@ namespace congress.Controllers
         }
 
         [HttpGet("senators")]
-        public IEnumerable<object> GetSenators(int congressNumber, int sessionNumber)
+        public async Task<IEnumerable<object>> GetSenators(int congressNumber, int sessionNumber)
         {
             if (congressNumber <= 0 || sessionNumber <= 0)
             {
@@ -47,7 +49,7 @@ namespace congress.Controllers
             */
 
             // Maybe should mark senator as "current" in the db on import
-            return context.Sessions
+            return await context.Sessions
                 .Where(session => session.SessionNumber == sessionNumber && session.CongressNumber == congressNumber)
                 .Join(context.LegislativeItems, s => s.Id, l => l.SessionId, (s, l) => l)
                 .Join(context.Votes, l => l.Id, v => v.LegislativeItemId, (l, v) => v)
@@ -55,7 +57,7 @@ namespace congress.Controllers
                 .GroupBy(senator => new { senator.Id, senator.LisMemberId, senator.FullName, senator.State })
                 .OrderBy(g => g.Key.State)
                 .Select(g => g.Key)
-                .ToList();
+                .ToListAsync();
         }
 
         [HttpGet("votes")]
