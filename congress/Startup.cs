@@ -27,13 +27,13 @@ namespace congress
             {
                 foreach (DictionaryEntry e in System.Environment.GetEnvironmentVariables())
                 {
-                    Console.WriteLine(e.Key + ":" + e.Value);
-                    Debug.WriteLine(e.Key + ":" + e.Value);
-                    Trace.TraceError(e.Key + ":" + e.Value);
+                    Console.WriteLine(e.Key + ":C:" + e.Value);
+                    Debug.WriteLine(e.Key + ":D:" + e.Value);
+                    Trace.TraceError(e.Key + ":T:" + e.Value);
                 }
 
                 // need to print environment variables, figure out if this is a casing issue or doesn't exist
-                string connectionString = Configuration.GetValue<string>("CongressionalVotesDbConnectionString".ToUpper());
+                string connectionString = Configuration.GetValue<string>("CongressionalVotesDbConnectionString");
                 options.UseSqlServer(connectionString);
             });
 

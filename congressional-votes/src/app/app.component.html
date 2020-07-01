@@ -1,5 +1,7 @@
 <h1>First Component</h1>
-<h2>sessions</h2>
+<h2>Senators</h2>
 <ul>
-<li *ngFor="let session of sessions$ | async">{{session.Congress}}</li>
+  <li *ngFor="let senator of senators$ | async">
+    {{ senator.State }} : {{ senator.FullName }}
+  </li>
 </ul>

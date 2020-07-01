@@ -6,7 +6,7 @@ namespace congress.Model
     {
         public int Id { get; set; }
 
-        public string SessionId { get; set; }
+        public int SessionId { get; set; }
 
         public string Title { get; set; }
 
