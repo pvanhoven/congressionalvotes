@@ -1,0 +1,11 @@
+<p>home works!</p>
+<ul>
+  <li *ngFor="let senator of senators$ | async">
+    <a
+      [routerLink]="['/senator-details']"
+      [queryParams]="{ LisMemberId: senator.LisMemberId }"
+    >
+      {{ senator.State }} : {{ senator.FullName }}
+    </a>
+  </li>
+</ul>
