@@ -8,10 +8,11 @@ import { BaseUrlInterceptor } from './base-url-interceptor';
 import { SenatorDetailComponent } from './senator-detail/senator-detail.component';
 import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, SenatorDetailComponent, HomeComponent],
-  imports: [BrowserModule, CommonModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, CommonModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
