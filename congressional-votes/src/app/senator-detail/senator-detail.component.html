@@ -3,4 +3,6 @@
     {{ vote.Vote.VoteCast }} {{ vote.LegislativeItem.Title }}
   </li>
 </ul>
-<p>senator-detail works!</p>
+<div *ngIf="isLoading">
+  <mat-spinner color="primary" mode="indeterminate"></mat-spinner>
+</div>

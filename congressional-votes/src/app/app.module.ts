@@ -9,10 +9,18 @@ import { SenatorDetailComponent } from './senator-detail/senator-detail.componen
 import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [AppComponent, SenatorDetailComponent, HomeComponent],
-  imports: [BrowserModule, CommonModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule,
+  ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

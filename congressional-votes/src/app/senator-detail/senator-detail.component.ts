@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { Senator } from '../senator';
 import { LegislativeItem } from '../legislative-item';
 import { Vote } from '../vote';
@@ -12,35 +12,42 @@ import { switchMap, filter, tap } from 'rxjs/operators';
   templateUrl: './senator-detail.component.html',
   styleUrls: ['./senator-detail.component.css'],
 })
-export class SenatorDetailComponent implements OnInit {
-  constructor(private httpClient: HttpClient, private route: ActivatedRoute) {}
-
+export class SenatorDetailComponent implements OnInit, OnDestroy {
   CurrentSessionVote$: Observable<SenatorDetailViewModel>;
   ViewModel: SenatorDetailViewModel;
+  isLoading = true;
+  subscriptions: Subscription[] = [];
+
+  constructor(private httpClient: HttpClient, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.ViewModel = new SenatorDetailViewModel();
     this.ViewModel.Senator = {} as Senator;
     this.ViewModel.Votes = [] as SenatorDetailVote[];
 
-    console.log('inside sen detail');
-    //this.CurrentSessionVote$ = this.route.queryParams.pipe(
-    this.route.queryParams
-      .pipe(
-        tap((params) => {
-          console.log('querymaps: ' + params);
-          console.log('querymaps: ' + Object.keys(params));
-          console.log('querymaps:sen:' + params['LisMemberId']);
-        }),
-        switchMap((params) => {
-          return this.httpClient.get<SenatorDetailViewModel>(
-            `senate/currentsessionvotes?LisMemberId=${params['LisMemberId']}`
-          );
-        })
-      )
-      .subscribe((r) => {
-        this.ViewModel = r;
-      });
+    this.subscriptions.push(
+      this.route.queryParams
+        .pipe(
+          switchMap((params) => {
+            return this.httpClient.get<SenatorDetailViewModel>(
+              `senate/currentsessionvotes?LisMemberId=${params['LisMemberId']}`
+            );
+          })
+        )
+        .subscribe(
+          (r) => {
+            this.isLoading = false;
+            this.ViewModel = r;
+          },
+          () => {
+            this.isLoading = false;
+          }
+        )
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach((s) => s.unsubscribe());
   }
 }
 

@@ -11,15 +11,18 @@ import { tap } from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
   senators$: Observable<Senator[]>;
+  isLoading = true;
 
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.senators$ = this.httpClient
       .get<Senator[]>('senate/senators?congressNumber=116&sessionNumber=2')
       .pipe(
-        tap((senators) =>
-          senators.sort((a, b) => {
+        tap((senators) => {
+          this.isLoading = false;
+          return senators.sort((a, b) => {
             if (a.State < b.State) {
               return -1;
             }
@@ -29,8 +32,8 @@ export class HomeComponent implements OnInit {
             }
 
             return 0;
-          })
-        )
+          });
+        })
       );
   }
 }
