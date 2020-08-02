@@ -17,9 +17,7 @@ namespace congress_downloader
             Console.WriteLine("Starting...");
 
             var congresses = new [] { 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116 };
-            //var congresses = new [] { 116 };
             var sessions = new [] { 1, 2 };
-            //var sessions = new [] { 2 };
             string currentDirectory = Directory.GetCurrentDirectory();
             string dataDir = $"{currentDirectory}/data";
             if (!Directory.Exists(dataDir))
