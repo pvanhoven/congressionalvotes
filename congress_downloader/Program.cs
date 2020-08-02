@@ -9,15 +9,14 @@ namespace congress_downloader
 {
     public class Program
     {
-        const string SENATE_URL = "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_{0}_{1}.xml";
-        const string roll_call = "http://www.senate.gov/legislative/LIS/roll_call_votes/vote{0}{1}/vote_{0}_{1}_{2}.xml";
+        private const string SENATE_URL = "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_{0}_{1}.xml";
+        private const string roll_call = "http://www.senate.gov/legislative/LIS/roll_call_votes/vote{0}{1}/vote_{0}_{1}_{2}.xml";
+        private static readonly int[] congresses = new [] { 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116 };
 
         public static void Main(string[] args)
         {
             Console.WriteLine("Starting...");
 
-            var congresses = new [] { 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116 };
-            var sessions = new [] { 1, 2 };
             string currentDirectory = Directory.GetCurrentDirectory();
             string dataDir = $"{currentDirectory}/data";
             if (!Directory.Exists(dataDir))
@@ -28,31 +27,29 @@ namespace congress_downloader
             HttpClient client = new HttpClient();
             foreach (var congress in congresses)
             {
-                ProcessSessions(client, congress, sessions, dataDir);
+                ProcessSession(client, congress, 1, dataDir);
+                ProcessSession(client, congress, 2, dataDir);
             }
         }
 
-        public static void ProcessSessions(HttpClient client, int congress, int[] sessions, string dataDir)
+        public static void ProcessSession(HttpClient client, int congress, int session, string dataDir)
         {
-            foreach (var session in sessions)
+            var response = GetSummaryDataResponse(client, congress, session);
+            Console.WriteLine($"Response: {response.StatusCode}");
+            string directoryName = $"{dataDir}/{congress}/{session}";
+            if (!Directory.Exists(directoryName))
             {
-                var response = GetSummaryDataResponse(client, congress, session);
-                Console.WriteLine($"Response: {response.StatusCode}");
-                string directoryName = $"{dataDir}/{congress}/{session}";
-                if (!Directory.Exists(directoryName))
-                {
-                    Directory.CreateDirectory(directoryName);
-                }
+                Directory.CreateDirectory(directoryName);
+            }
 
-                string summaryFileName = $"{directoryName}/summary.xml";
-                CreateSummaryFile(summaryFileName, response);
+            string summaryFileName = $"{directoryName}/summary.xml";
+            CreateSummaryFile(summaryFileName, response);
 
-                var data = GetSummaryData(summaryFileName);
-                Console.WriteLine($"congression: {congress}, session: {session} data: {data}");
-                foreach (var vote in data.vote_summary.votes)
-                {
-                    ProcessVotes(vote, directoryName, congress, session, client);
-                }
+            var data = GetSummaryData(summaryFileName);
+            Console.WriteLine($"congression: {congress}, session: {session} data: {data}");
+            foreach (var vote in data.vote_summary.votes)
+            {
+                ProcessVotes(vote, directoryName, congress, session, client);
             }
         }
 
