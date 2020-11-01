@@ -10,9 +10,16 @@ import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { AppNavBarComponent } from './app-nav-bar/app-nav-bar.component';
 
 @NgModule({
-  declarations: [AppComponent, SenatorDetailComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    SenatorDetailComponent,
+    HomeComponent,
+    AppNavBarComponent,
+  ],
   imports: [
     BrowserModule,
     CommonModule,
@@ -20,6 +27,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     HttpClientModule,
     BrowserAnimationsModule,
     MatProgressSpinnerModule,
+    MatToolbarModule,
   ],
   providers: [
     {
