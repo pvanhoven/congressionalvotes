@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppNavBarComponent } from './app-nav-bar.component';
 
@@ -8,9 +9,9 @@ describe('AppNavBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppNavBarComponent ]
-    })
-    .compileComponents();
+      declarations: [AppNavBarComponent],
+      imports: [MatToolbarModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {
