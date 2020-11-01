@@ -5,40 +5,47 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 variables:
-  BuildConfiguration: 'Release'
+  BuildConfiguration: "Release"
 
 steps:
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    projects: 'congress/congress.csproj'
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: "build"
+      projects: "congress/congress.csproj"
+      arguments: "--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)"
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'congress_drop'
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: "$(Build.ArtifactStagingDirectory)"
+      ArtifactName: "congress_drop"
 
-- task: Npm@1
-  displayName: 'npm install'
-  inputs:
-    command: 'install'
-    workingDir: 'congressional-votes'
+  - task: Npm@1
+    displayName: "npm install"
+    inputs:
+      command: "install"
+      workingDir: "congressional-votes"
 
-- task: Npm@1
-  displayName: 'Build Angular'
-  inputs:
-    command: 'custom'
-    customCommand: 'run build -- --prod'
-    workingDir: 'congressional-votes'
+  - task: Npm@1
+    displayName: "Build Angular"
+    inputs:
+      command: "custom"
+      customCommand: "run build -- --prod"
+      workingDir: "congressional-votes"
 
-- task: PublishPipelineArtifact@1
-  inputs:
-    artifactName: 'angular'
-    targetPath: 'congressional-votes/dist'
+  - task: Npm@1
+    displayName: "Run Angular Tests"
+    inputs:
+      command: "custom"
+      customCommand: "run test"
+      workingDir: "congressional-votes"
+
+  - task: PublishPipelineArtifact@1
+    inputs:
+      artifactName: "angular"
+      targetPath: "congressional-votes/dist"
