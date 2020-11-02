@@ -1,6 +1,7 @@
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { AppRoutingModule } from '../app-routing.module';
 import { HomeComponent } from '../home/home.component';
@@ -14,7 +15,12 @@ describe('SenatorDetailComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [HomeComponent, SenatorDetailComponent],
-      imports: [HttpClientModule, AppRoutingModule, MatProgressSpinnerModule],
+      imports: [
+        HttpClientModule,
+        AppRoutingModule,
+        MatProgressSpinnerModule,
+        MatCardModule,
+      ],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     }).compileComponents();
   });

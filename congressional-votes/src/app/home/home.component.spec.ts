@@ -1,6 +1,7 @@
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppNavBarComponent } from '../app-nav-bar/app-nav-bar.component';
@@ -21,6 +22,7 @@ describe('HomeComponent', () => {
         MatProgressSpinnerModule,
         HttpClientModule,
         MatToolbarModule,
+        MatCardModule,
       ],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     }).compileComponents();

@@ -11,7 +11,9 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 import { AppNavBarComponent } from './app-nav-bar/app-nav-bar.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { AppNavBarComponent } from './app-nav-bar/app-nav-bar.component';
     BrowserAnimationsModule,
     MatProgressSpinnerModule,
     MatToolbarModule,
+    MatCardModule,
+    FlexLayoutModule,
   ],
   providers: [
     {
