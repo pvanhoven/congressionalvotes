@@ -1,21 +1,19 @@
 <div class="container" fxLayout="row wrap">
-  <mat-card
-    fxFlex="50%"
-    class="senator-card"
-    *ngFor="let senator of senators$ | async"
-  >
-    <mat-card-header>
-      <div mat-card-avatar>{{ senator.State }}</div>
-      <mat-card-title>
-        <a
-          [routerLink]="['/senator-details']"
-          [queryParams]="{ LisMemberId: senator.LisMemberId }"
-        >
-          {{ senator.FullName }}
-        </a>
-      </mat-card-title>
-      <mat-card-subtitle>{{ senator.LisMemberId }}</mat-card-subtitle>
-    </mat-card-header>
+  <mat-card class="senator-card" *ngFor="let senator of senators$ | async">
+    <div class="center-card-content">
+      <mat-card-header>
+        <div mat-card-avatar>{{ senator.State }}</div>
+        <mat-card-title>
+          <a
+            [routerLink]="['/senator-details']"
+            [queryParams]="{ LisMemberId: senator.LisMemberId }"
+          >
+            {{ senator.FullName }}
+          </a>
+        </mat-card-title>
+        <mat-card-subtitle>{{ senator.LisMemberId }}</mat-card-subtitle>
+      </mat-card-header>
+    </div>
   </mat-card>
   <div *ngIf="isLoading">
     <mat-spinner></mat-spinner>
