@@ -1,10 +1,11 @@
 using System;
 using System.Collections;
 using System.Diagnostics;
+using System.Reflection;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -37,6 +38,8 @@ namespace congress
                 options.UseSqlServer(connectionString);
             });
 
+            services.AddMediatR(typeof(Startup).GetTypeInfo().Assembly);
+
             services.AddControllers()
                 .AddJsonOptions(options =>
                 {
@@ -54,13 +57,9 @@ namespace congress
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
