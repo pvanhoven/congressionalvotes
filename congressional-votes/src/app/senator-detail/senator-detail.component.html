@@ -1,8 +1,21 @@
-<ul>
-  <li *ngFor="let vote of ViewModel.Votes">
-    {{ vote.Vote.VoteCast }} {{ vote.LegislativeItem.Title }}
-  </li>
-</ul>
+<div class="container" fxLayout="row wrap">
+  <mat-card class="vote-card" *ngFor="let vote of ViewModel.Votes">
+    <mat-card-header>
+      <mat-card-title>
+        {{ vote.LegislativeItem.Title }}
+      </mat-card-title>
+      <mat-card-subtitle
+        [class.green]="vote.Vote.VoteCast === 'Yea'"
+        [class.red]="vote.Vote.VoteCast === 'Nay'"
+      >
+        {{ vote.Vote.VoteCast }}
+      </mat-card-subtitle>
+      <mat-card-subtitle>
+        {{ vote.LegislativeItem.VoteDate | date: "shortDate" }}
+      </mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>
 <div *ngIf="isLoading">
   <mat-spinner color="primary" mode="indeterminate"></mat-spinner>
 </div>
