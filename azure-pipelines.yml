@@ -20,6 +20,11 @@ steps:
       projects: "congress/congress.csproj"
       arguments: "--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)"
 
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: "test"
+      projects: "congress.tests/congress.tests.csproj"
+
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: "$(Build.ArtifactStagingDirectory)"
