@@ -12,3 +12,7 @@
   justify-content: space-evenly;
   max-width: 900px;
 }
+
+.spinner-container {
+  padding-top: 50px;
+}
