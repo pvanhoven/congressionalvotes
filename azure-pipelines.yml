@@ -50,6 +50,13 @@ steps:
       customCommand: "run test"
       workingDir: "congressional-votes"
 
+  - task: PublishTestResults@2
+    displayName: "Publish Angular Test Results"
+    inputs:
+      testREsultsFormat: "JUnit"
+      testREsultsFiles: "congressional-votes/junit.xml"
+      failTaskOnFailedTests: true
+
   - task: PublishPipelineArtifact@1
     inputs:
       artifactName: "angular"
