@@ -25,13 +25,21 @@ namespace congress_importer
             string userName = args[1];
             string password = args[2];
             //string path = args[3];
+            string congresses = args.Length > 4 ? args[4] : null;
             string path = Directory.GetCurrentDirectory();
             path += "/../congress_downloader";
 
             SenateXmlLoader loader = new SenateXmlLoader();
             var sessions = loader.LoadSessions(path).OrderByDescending(s => s.Year).ThenBy(s => s.Session);
 
-            foreach (SenateSession session in sessions)
+            IEnumerable<SenateSession> senateSessions = sessions;
+            if (!string.IsNullOrEmpty(congresses))
+            {
+                var split = congresses.Split(",").ToList();
+                senateSessions = sessions.Where(s => split.Contains(s.Congress));
+            }
+
+            foreach (SenateSession session in senateSessions)
             {
                 ProcessSession(loader, path, session, databaseName, userName, password);
             }
@@ -39,9 +47,12 @@ namespace congress_importer
 
         private static void ProcessSession(SenateXmlLoader loader, string path, SenateSession session, string databaseName, string userName, string password)
         {
-            using SqlConnection connection = new SqlConnection($"Server=localhost;Database={databaseName};User Id={userName};Password={password};");
+            string connectionString = $"Server=localhost;Database={databaseName};User Id={userName};Password={password};";
+            using SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             int currentSessionId = 0;
+
+            currentSessionId = InsertCongressionalSession(connection, session.Congress, session.Session, session.Year);
 
             IEnumerable<RollCallVote> votes = loader.GetRollCallVotes(path, session.Congress, session.Session)
                 .OrderBy(v => Int32.TryParse(v.VoteNumber, out int voteNum) ? voteNum : -1);
@@ -112,7 +123,7 @@ namespace congress_importer
             command.CommandText = $@"
                 BEGIN TRAN t1;
                 UPDATE dbo.Senators SET FullName = @FullName, LastName = @LastName, @FirstName = @FirstName, Party = @Party, State = @State
-                    WHERE LisMemberId = @Lis
+                    WHERE LisMemberId = @LisMemberID
                 IF @@RowCount = 0
                 BEGIN
                     INSERT INTO dbo.Senators (FullName, LastName, FirstName, Party, State, LisMemberId) VALUES (@FullName, @LastName, @FirstName, @Party, @State, @LisMemberId)
@@ -142,7 +153,7 @@ namespace congress_importer
                     DocumentShortTitle = @DocumentShortTitle, AmendmentNumber = @AmendmentNumber, AmendmentToDocumentNumber = @AmendmentToDocumentNumber,
                     AmendmentPurpose = @AmendmentPurpose, Issue = @Issue, IssueLink = @IssueLink, Question = @Question, Result = @Result, YeaCount = @YeaCount, 
                     NayCount = @NayCount, PresentCount = @PresentCount, AbsentCount = @AbsentCount, TieBreakerByWhom = @TieBreakerByWhom, TieBreakerVote = @TieBreakerVote
-                WHERE SessionID = @SessionID and VoteNumber = @Vote
+                WHERE SessionID = @SessionID and VoteNumber = @VoteNumber
                 IF @@ROWCOUNT = 0
                 BEGIN
                     INSERT INTO dbo.LegislativeItems(SessionId, Title, VoteNumber, VoteDate, ModifyDate, VoteQuestionText, VoteDocumentText,
@@ -190,7 +201,7 @@ namespace congress_importer
             command.Parameters.AddWithValue("@TieBreakerByWhom", vote.TieBreaker.ByWhom);
             command.Parameters.AddWithValue("@TieBreakerVote", vote.TieBreaker.TieBreakerVote);
 
-            Console.WriteLine($"Insert/update LegItem: session: {currentSessionId} voteNum: {vote.VoteNumber}");
+            Console.WriteLine($"Insert/update LegItem : session: {currentSessionId} voteNum: {vote.VoteNumber}");
             int result = command.ExecuteNonQuery();
         }
 
