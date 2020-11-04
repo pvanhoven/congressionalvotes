@@ -21,7 +21,7 @@ public class SenateSession
 public class Votes
 {
     [XmlElement("vote")]
-    public Vote[] VoteElements {get;set;}
+    public Vote[] VoteElements { get; set; }
 }
 public class Vote
 {
@@ -54,8 +54,14 @@ public class Vote
 public class VoteTally
 {
     [XmlElement("yeas")]
-    public int Yeas { get; set; }
+    public string YeasString { get; set; }
+
+    [XmlIgnore]
+    public int? Yeas => int.TryParse(YeasString, out int parsedYeas) ? parsedYeas : (int?) null;
 
     [XmlElement("nays")]
-    public int Nays { get; set; }
+    public string NaysString { get; set; }
+
+    [XmlIgnore]
+    public int? Nays => int.TryParse(NaysString, out int parsedNays) ? parsedNays : (int?) null;
 }
