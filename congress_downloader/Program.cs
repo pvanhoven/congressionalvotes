@@ -11,7 +11,7 @@ namespace congress_downloader
 
             var executor = CommandExecutor.For(c =>
             {
-                c.RegisterCommand<DownloadCommand>();
+                c.RegisterCommands(typeof(Program).Assembly);
             });
 
             return executor.Execute(args);
