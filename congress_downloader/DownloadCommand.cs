@@ -31,8 +31,10 @@ public class DownloadCommand : OaktonCommand<Options>
         HttpClient client = new HttpClient();
         foreach (var congress in input.CongressesFlag)
         {
-            ProcessSession(client, congress, 1, dataDir);
-            ProcessSession(client, congress, 2, dataDir);
+            foreach (var session in input.SessionsFlag)
+            {
+                ProcessSession(client, congress, session, dataDir);
+            }
         }
 
         return true;
