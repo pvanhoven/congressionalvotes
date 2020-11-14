@@ -1,7 +1,9 @@
 export interface SenateSession {
-  Congress: string;
+  Id: number;
 
-  Session: string;
+  CongressNumber: number;
 
-  Year: string;
+  SessionNumber: number;
+
+  Year: number;
 }

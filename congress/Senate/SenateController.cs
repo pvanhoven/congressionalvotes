@@ -20,6 +20,14 @@ namespace congress.Controllers
             this.mediator = mediator;
         }
 
+        [HttpGet("senators-home")]
+        public async Task<object> GetSentorsHome()
+        {
+            var request = new SenatorsHomeCommand();
+            var result = await mediator.Send(request);
+            return result;
+        }
+
         [HttpGet("senators")]
         public async Task<IEnumerable<object>> GetSenators(int congressNumber, int sessionNumber)
         {
@@ -38,6 +46,14 @@ namespace congress.Controllers
             }
 
             var request = new CurrentSessionVotesCommand(lisMemberId);
+            var result = await mediator.Send(request);
+            return result;
+        }
+
+        [HttpGet("senatorsessionvotes")]
+        public async Task<SenatorSessionVote> GetSenatorVotesBySession(string lisMemberId, int sessionId)
+        {
+            var request = new SenatorSessionVoteCommand(lisMemberId, sessionId);
             var result = await mediator.Send(request);
             return result;
         }

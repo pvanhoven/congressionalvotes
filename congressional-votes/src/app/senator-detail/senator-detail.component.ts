@@ -30,7 +30,7 @@ export class SenatorDetailComponent implements OnInit, OnDestroy {
         .pipe(
           switchMap((params) => {
             return this.httpClient.get<SenatorDetailViewModel>(
-              `senate/currentsessionvotes?LisMemberId=${params['LisMemberId']}`
+              `senate/senatorsessionvotes?LisMemberId=${params['LisMemberId']}&sessionId=${params['SessionId']}`
             );
           })
         )

@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.container {
+.senators-container {
   justify-content: space-evenly;
   max-width: 900px;
 }
