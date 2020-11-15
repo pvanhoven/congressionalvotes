@@ -2,7 +2,9 @@ import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
 import { AppRoutingModule } from '../app-routing.module';
 import { HomeComponent } from '../home/home.component';
 
@@ -19,6 +21,8 @@ describe('SenatorDetailComponent', () => {
         HttpClientModule,
         AppRoutingModule,
         MatProgressSpinnerModule,
+        MatInputModule,
+        MatSelectModule,
         MatCardModule,
       ],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
