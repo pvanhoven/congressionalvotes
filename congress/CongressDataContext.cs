@@ -7,12 +7,12 @@ namespace congress
     {
         public CongressDataContext(DbContextOptions<CongressDataContext> contextOptions) : base(contextOptions) { }
 
-        public DbSet<Session> Sessions { get; set; }
+        public DbSet<Session> Sessions => Set<Session>();
 
-        public DbSet<Senator> Senators { get; set; }
+        public DbSet<Senator> Senators => Set<Senator>();
 
-        public DbSet<LegislativeItem> LegislativeItems { get; set; }
+        public DbSet<LegislativeItem> LegislativeItems => Set<LegislativeItem>();
 
-        public DbSet<Model.Vote> Votes { get; set; }
+        public DbSet<Model.Vote> Votes => Set<Model.Vote>();
     }
 }

@@ -8,6 +8,6 @@ namespace congress.Model
 
         public int LegislativeItemId { get; set; }
 
-        public string VoteCast { get; set; }
+        public string? VoteCast { get; set; }
     }
 }

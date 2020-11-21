@@ -5,50 +5,50 @@ using System.Xml.Serialization;
 public class SenateSession
 {
     [XmlElement("congress")]
-    public string Congress { get; set; }
+    public string? Congress { get; set; }
 
     [XmlElement("session")]
-    public string Session { get; set; }
+    public string? Session { get; set; }
 
     [XmlElement("congress_year")]
-    public string Year { get; set; }
+    public string? Year { get; set; }
 
     [XmlElement("votes")]
-    public Votes Votes { get; set; }
+    public Votes? Votes { get; set; }
 }
 
 [XmlRoot("votes")]
 public class Votes
 {
     [XmlElement("vote")]
-    public Vote[] VoteElements {get;set;}
+    public Vote[]? VoteElements { get; set; }
 }
 public class Vote
 {
     [XmlElement("vote_number")]
-    public string VoteNumber { get; set; }
+    public string? VoteNumber { get; set; }
 
     [XmlElement("vote_date")]
-    public string VoteDate { get; set; }
+    public string? VoteDate { get; set; }
 
     // <issue><A HREF="http://thomas.loc.gov/cgi-bin/bdquery/z?d105:HR02264:">H.R. 2264</A></issue>
     [XmlElement("issue")]
-    public object[] Issue { get; set; }
+    public object[]? Issue { get; set; }
 
     // Xml may look like the below. Object[] is easiest way to make this work until it can be parsed better
     // The nested element after text content makes it weird
     // <question>On the Motion to Table <measure>S.Amdt. 1188</measure></question>
     [XmlElement("question")]
-    public object[] Question { get; set; }
+    public object[]? Question { get; set; }
 
     [XmlElement("result")]
-    public string Result { get; set; }
+    public string? Result { get; set; }
 
     [XmlElement("vote_tally")]
-    public VoteTally VoteTally { get; set; }
+    public VoteTally? VoteTally { get; set; }
 
     [XmlElement("title")]
-    public string Title { get; set; }
+    public string? Title { get; set; }
 }
 
 public class VoteTally
