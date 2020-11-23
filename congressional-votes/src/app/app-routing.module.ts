@@ -4,8 +4,12 @@ import { SenatorDetailComponent } from './senator-detail/senator-detail.componen
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'senator-details', component: SenatorDetailComponent },
+  { path: '', component: HomeComponent, data: { animation: 'Home' } },
+  {
+    path: 'senator-details',
+    component: SenatorDetailComponent,
+    data: { animation: 'SenatorDetails' },
+  },
 ];
 
 @NgModule({

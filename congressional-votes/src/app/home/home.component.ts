@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Senator } from '../senator';
 import { HttpClient } from '@angular/common/http';
 import { SenateSession } from '../senate-session';
+import { combineLatest, timer } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -18,8 +19,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoading = true;
-    this.httpClient.get<SenatorsHomeResult>('senate/senators-home').subscribe(
-      (data) => {
+    combineLatest([
+      timer(400), // minimum time (close to animation duration) before allowing binding to occur in below http request
+      this.httpClient.get<SenatorsHomeResult>('senate/senators-home'),
+    ]).subscribe(
+      ([, data]) => {
         this.isLoading = false;
         this.selectedSession = data.CurrentSessionId;
         this.sessions = data.AvailableSessions;

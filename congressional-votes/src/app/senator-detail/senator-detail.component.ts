@@ -1,11 +1,11 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, Subscription } from 'rxjs';
+import { combineLatest, Observable, Subscription, timer } from 'rxjs';
 import { Senator } from '../senator';
 import { LegislativeItem } from '../legislative-item';
 import { Vote } from '../vote';
 import { ActivatedRoute } from '@angular/router';
-import { switchMap, filter, tap } from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-senator-detail',
@@ -26,23 +26,24 @@ export class SenatorDetailComponent implements OnInit, OnDestroy {
     this.ViewModel.Votes = [] as SenatorDetailVote[];
 
     this.subscriptions.push(
-      this.route.queryParams
-        .pipe(
+      combineLatest([
+        timer(400), // minimium time before allowing binding to occur. Similar time to animation duration between routes
+        this.route.queryParams.pipe(
           switchMap((params) => {
             return this.httpClient.get<SenatorDetailViewModel>(
               `senate/senatorsessionvotes?LisMemberId=${params['LisMemberId']}&sessionId=${params['SessionId']}`
             );
           })
-        )
-        .subscribe(
-          (r) => {
-            this.isLoading = false;
-            this.ViewModel = r;
-          },
-          () => {
-            this.isLoading = false;
-          }
-        )
+        ),
+      ]).subscribe(
+        ([, votes]) => {
+          this.isLoading = false;
+          this.ViewModel = votes;
+        },
+        () => {
+          this.isLoading = false;
+        }
+      )
     );
   }
 

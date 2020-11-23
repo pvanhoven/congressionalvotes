@@ -1,4 +1,4 @@
-<div class="container" fxLayout="column">
+<div *ngIf="!isLoading" class="container" fxLayout="column">
   <mat-card class="vote-card" *ngFor="let vote of ViewModel.Votes">
     <mat-card-header>
       <mat-card-title>
