@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { AppRoutingModule } from '../app-routing.module';
 import { HomeComponent } from '../home/home.component';
 
@@ -24,6 +25,7 @@ describe('SenatorDetailComponent', () => {
         MatInputModule,
         MatSelectModule,
         MatCardModule,
+        NgxSkeletonLoaderModule,
       ],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     }).compileComponents();

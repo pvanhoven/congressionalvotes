@@ -7,6 +7,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { AppNavBarComponent } from '../app-nav-bar/app-nav-bar.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { SenatorDetailComponent } from '../senator-detail/senator-detail.component';
@@ -29,6 +30,7 @@ describe('HomeComponent', () => {
         MatInputModule,
         MatSelectModule,
         MatCardModule,
+        NgxSkeletonLoaderModule,
       ],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     }).compileComponents();

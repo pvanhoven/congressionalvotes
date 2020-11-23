@@ -9,13 +9,13 @@ import { SenatorDetailComponent } from './senator-detail/senator-detail.componen
 import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { AppNavBarComponent } from './app-nav-bar/app-nav-bar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 @NgModule({
   declarations: [
@@ -31,12 +31,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatProgressSpinnerModule,
     MatToolbarModule,
     MatInputModule,
     MatSelectModule,
     MatCardModule,
     FlexLayoutModule,
+    NgxSkeletonLoaderModule,
   ],
   providers: [
     {

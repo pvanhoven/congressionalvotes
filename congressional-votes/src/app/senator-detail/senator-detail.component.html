@@ -1,21 +1,40 @@
-<div *ngIf="!isLoading" class="container" fxLayout="column">
-  <mat-card class="vote-card" *ngFor="let vote of ViewModel.Votes">
-    <mat-card-header>
-      <mat-card-title>
-        {{ vote.LegislativeItem.Title }}
-      </mat-card-title>
-      <mat-card-subtitle
-        [class.green]="vote.Vote.VoteCast === 'Yea'"
-        [class.red]="vote.Vote.VoteCast === 'Nay'"
-      >
-        {{ vote.Vote.VoteCast }}
-      </mat-card-subtitle>
-      <mat-card-subtitle>
-        {{ vote.LegislativeItem.VoteDate | date: "shortDate" }}
-      </mat-card-subtitle>
-    </mat-card-header>
-  </mat-card>
-</div>
-<div class="spinner-container" *ngIf="isLoading">
-  <mat-spinner color="primary" mode="indeterminate"></mat-spinner>
+<div class="container" fxLayout="column">
+  <ng-container *ngIf="ViewModel.Votes.length; else skeletonLoaderTemplate">
+    <mat-card class="vote-card" *ngFor="let vote of ViewModel.Votes">
+      <mat-card-header>
+        <mat-card-title>
+          {{ vote.LegislativeItem.Title }}
+        </mat-card-title>
+        <mat-card-subtitle
+          [class.green]="vote.Vote.VoteCast === 'Yea'"
+          [class.red]="vote.Vote.VoteCast === 'Nay'"
+        >
+          {{ vote.Vote.VoteCast }}
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+          {{ vote.LegislativeItem.VoteDate | date: "shortDate" }}
+        </mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </ng-container>
+  <ng-template #skeletonLoaderTemplate>
+    <mat-card class="vote-card" *ngFor="let fake of skeletons">
+      <mat-card-header>
+        <mat-card-title>
+          <ngx-skeleton-loader [theme]="{ height: '20px', width: '275px' }">
+          </ngx-skeleton-loader>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <ngx-skeleton-loader
+            [theme]="{ height: '20px', width: '75px' }"
+          ></ngx-skeleton-loader>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+          <ngx-skeleton-loader
+            [theme]="{ height: '20px', width: '65px' }"
+          ></ngx-skeleton-loader>
+        </mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </ng-template>
 </div>

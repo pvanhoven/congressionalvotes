@@ -13,9 +13,9 @@ import { switchMap } from 'rxjs/operators';
   styleUrls: ['./senator-detail.component.css'],
 })
 export class SenatorDetailComponent implements OnInit, OnDestroy {
+  skeletons = new Array(50);
   CurrentSessionVote$: Observable<SenatorDetailViewModel>;
   ViewModel: SenatorDetailViewModel;
-  isLoading = true;
   subscriptions: Subscription[] = [];
 
   constructor(private httpClient: HttpClient, private route: ActivatedRoute) {}
@@ -27,7 +27,7 @@ export class SenatorDetailComponent implements OnInit, OnDestroy {
 
     this.subscriptions.push(
       combineLatest([
-        timer(400), // minimium time before allowing binding to occur. Similar time to animation duration between routes
+        timer(500), // minimium time before allowing binding to occur. Similar time to animation duration between routes
         this.route.queryParams.pipe(
           switchMap((params) => {
             return this.httpClient.get<SenatorDetailViewModel>(
@@ -35,15 +35,9 @@ export class SenatorDetailComponent implements OnInit, OnDestroy {
             );
           })
         ),
-      ]).subscribe(
-        ([, votes]) => {
-          this.isLoading = false;
-          this.ViewModel = votes;
-        },
-        () => {
-          this.isLoading = false;
-        }
-      )
+      ]).subscribe(([, votes]) => {
+        this.ViewModel = votes;
+      })
     );
   }
 

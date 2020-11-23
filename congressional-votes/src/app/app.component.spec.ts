@@ -2,6 +2,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppNavBarComponent } from './app-nav-bar/app-nav-bar.component';
 import { AppComponent } from './app.component';
@@ -9,7 +10,12 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule, RouterTestingModule, MatToolbarModule],
+      imports: [
+        HttpClientModule,
+        RouterTestingModule,
+        MatToolbarModule,
+        BrowserAnimationsModule,
+      ],
       declarations: [AppComponent, AppNavBarComponent],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     }).compileComponents();

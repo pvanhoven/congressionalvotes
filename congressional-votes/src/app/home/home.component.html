@@ -12,26 +12,47 @@
   </mat-form-field>
 </div>
 <div class="senators-container" fxLayout="row wrap">
-  <mat-card class="senator-card" *ngFor="let senator of senators">
-    <div class="center-card-content">
-      <mat-card-header>
-        <div mat-card-avatar>{{ senator.State }}</div>
-        <mat-card-title>
-          <a
-            [routerLink]="['/senator-details']"
-            [queryParams]="{
-              LisMemberId: senator.LisMemberId,
-              SessionId: selectedSession
-            }"
-          >
-            {{ senator.FullName }}
-          </a>
-        </mat-card-title>
-        <mat-card-subtitle>{{ senator.LisMemberId }}</mat-card-subtitle>
-      </mat-card-header>
-    </div>
-  </mat-card>
-</div>
-<div class="spinner-container" *ngIf="isLoading">
-  <mat-spinner></mat-spinner>
+  <ng-container *ngIf="senators.length; else skeletonLoaderTemplate">
+    <mat-card class="senator-card" *ngFor="let senator of senators">
+      <div class="center-card-content">
+        <mat-card-header>
+          <div mat-card-avatar>{{ senator.State }}</div>
+          <mat-card-title>
+            <a
+              [routerLink]="['/senator-details']"
+              [queryParams]="{
+                LisMemberId: senator.LisMemberId,
+                SessionId: selectedSession
+              }"
+            >
+              {{ senator.FullName }}
+            </a>
+          </mat-card-title>
+          <mat-card-subtitle>{{ senator.LisMemberId }}</mat-card-subtitle>
+        </mat-card-header>
+      </div>
+    </mat-card>
+  </ng-container>
+  <ng-template #skeletonLoaderTemplate>
+    <mat-card class="senator-card" *ngFor="let fake of skeletons">
+      <div class="center-card-content">
+        <mat-card-header>
+          <ngx-skeleton-loader
+            mat-card-avatar
+            appearance="circle"
+          ></ngx-skeleton-loader>
+          <mat-card-title>
+            <ngx-skeleton-loader
+              [theme]="{ height: '20px', width: '175px' }"
+            ></ngx-skeleton-loader>
+          </mat-card-title>
+          <mat-card-subtitle>
+            <ngx-skeleton-loader
+              [theme]="{ height: '20px', width: '75px' }"
+            ></ngx-skeleton-loader>
+          </mat-card-subtitle>
+        </mat-card-header>
+      </div>
+    </mat-card>
+  </ng-template>
 </div>
