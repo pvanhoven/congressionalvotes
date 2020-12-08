@@ -1,0 +1,6 @@
+{
+  "name": "Congressional Votes",
+  "short_name": "Votes",
+  "start_url": "index.html",
+  "display": "standalone"
+}
